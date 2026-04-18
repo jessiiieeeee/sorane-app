@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sorane</title>
+    <meta
+      name="description"
+      content="Sorane helps musicians keep assignments organized, return at the right tempo, and make practice easier to pick back up."
+    />
+    <style>
+      :root {
+        --bg: #f6faf9;
+        --card: #ffffff;
+        --text: #21313a;
+        --muted: #6f7782;
+        --accent: #2f7f7b;
+        --border: #e6e8eb;
+        --shadow: 0 18px 40px rgba(143, 160, 175, 0.12);
+        --radius: 22px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background:
+          radial-gradient(circle at top left, #eef7f6 0, transparent 34%),
+          linear-gradient(180deg, #fbfdfc 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .shell {
+        margin: 0 auto;
+        max-width: 860px;
+        padding: 48px 20px 72px;
+      }
+
+      .hero {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 32px;
+        box-shadow: var(--shadow);
+        padding: 36px;
+      }
+
+      .kicker {
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        margin: 0 0 14px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: clamp(2.4rem, 6vw, 4.4rem);
+        line-height: 0.98;
+        margin: 0;
+      }
+
+      .lede {
+        color: var(--muted);
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin: 20px 0 0;
+        max-width: 640px;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        margin-top: 22px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 22px;
+      }
+
+      .card h2 {
+        font-size: 1.08rem;
+        margin: 0 0 10px;
+      }
+
+      .card p {
+        color: var(--muted);
+        line-height: 1.65;
+        margin: 0;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 26px;
+      }
+
+      .button,
+      .link {
+        align-items: center;
+        border-radius: 999px;
+        display: inline-flex;
+        font-weight: 700;
+        justify-content: center;
+        min-height: 46px;
+        padding: 0 18px;
+        text-decoration: none;
+      }
+
+      .button {
+        background: var(--accent);
+        color: white;
+      }
+
+      .link {
+        background: white;
+        border: 1px solid var(--border);
+        color: var(--text);
+      }
+
+      .footer {
+        color: var(--muted);
+        font-size: 0.95rem;
+        margin-top: 22px;
+      }
+
+      @media (max-width: 640px) {
+        .hero {
+          padding: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="kicker">Sorane</p>
+        <h1>Keep music practice easy to return to.</h1>
+        <p class="lede">
+          Sorane helps musicians keep assignments organized, jump back in at the right BPM, and
+          make daily practice feel lighter and easier to pick back up.
+        </p>
+
+        <div class="grid">
+          <article class="card">
+            <h2>Import messy assignments</h2>
+            <p>Bring in screenshots or text, then turn them into a cleaner practice queue.</p>
+          </article>
+          <article class="card">
+            <h2>Return at the right tempo</h2>
+            <p>Track current BPM, launch the metronome, and keep good practice context close by.</p>
+          </article>
+          <article class="card">
+            <h2>See quiet progress</h2>
+            <p>Use the calendar and practice log to understand what you’ve actually worked on.</p>
+          </article>
+        </div>
+
+        <div class="links">
+          <a class="button" href="./support.html">Support</a>
+          <a class="link" href="./privacy.html">Privacy Policy</a>
+        </div>
+
+        <p class="footer">Built by Jessie Li.</p>
+      </section>
+    </main>
+  </body>
+</html>

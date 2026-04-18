@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sorane Support</title>
+    <style>
+      :root {
+        --bg: #f7faf9;
+        --card: #ffffff;
+        --text: #21313a;
+        --muted: #6f7782;
+        --accent: #2f7f7b;
+        --border: #e6e8eb;
+        --shadow: 0 18px 40px rgba(143, 160, 175, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family:
+          ui-sans-serif,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        background: linear-gradient(180deg, #fcfdfd 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      .shell {
+        margin: 0 auto;
+        max-width: 760px;
+        padding: 40px 20px 72px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        padding: 30px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        margin: 0 0 14px;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        line-height: 1.02;
+        margin: 0 0 14px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .section + .section {
+        margin-top: 26px;
+      }
+
+      .contact {
+        background: #f7fbfb;
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        margin-top: 18px;
+        padding: 18px;
+      }
+
+      .contact strong {
+        color: var(--text);
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .nav {
+        display: flex;
+        gap: 12px;
+        margin-top: 22px;
+      }
+
+      .pill {
+        align-items: center;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        color: var(--text);
+        display: inline-flex;
+        font-weight: 700;
+        min-height: 44px;
+        padding: 0 16px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="card">
+        <p class="eyebrow">Support</p>
+        <h1>Need help with Sorane?</h1>
+        <p>
+          For support, bug reports, or feedback, please reach out by email.
+        </p>
+
+        <div class="contact">
+          <strong>Support email</strong>
+          <p style="margin: 0">
+            Replace this placeholder before App Store submission:
+            <a href="mailto:support@example.com">support@example.com</a>
+          </p>
+        </div>
+
+        <div class="section">
+          <p>
+            When you email, it helps to include:
+          </p>
+          <ul>
+            <li>what happened</li>
+            <li>what you expected instead</li>
+            <li>your device model and iOS version if it seems like a bug</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <p>
+            Sorane is a lightweight music practice app focused on making assignments easier to
+            organize, return to, and log over time.
+          </p>
+        </div>
+
+        <nav class="nav">
+          <a class="pill" href="./index.html">Home</a>
+          <a class="pill" href="./privacy.html">Privacy Policy</a>
+        </nav>
+      </section>
+    </main>
+  </body>
+</html>
