@@ -3,178 +3,218 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sorane</title>
+    <title>Sorane | Less Friction. More Playing.</title>
     <meta
       name="description"
-      content="Sorane helps musicians keep assignments organized, return at the right tempo, and make practice easier to pick back up."
+      content="Sorane is a local-first iPhone practice companion for musicians who want assignments, BPM context, tracks, and progress in one calm place."
     />
-    <style>
-      :root {
-        --bg: #f6faf9;
-        --card: #ffffff;
-        --text: #21313a;
-        --muted: #6f7782;
-        --accent: #2f7f7b;
-        --border: #e6e8eb;
-        --shadow: 0 18px 40px rgba(143, 160, 175, 0.12);
-        --radius: 22px;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family:
-          ui-sans-serif,
-          -apple-system,
-          BlinkMacSystemFont,
-          "Segoe UI",
-          sans-serif;
-        background:
-          radial-gradient(circle at top left, #eef7f6 0, transparent 34%),
-          linear-gradient(180deg, #fbfdfc 0%, var(--bg) 100%);
-        color: var(--text);
-      }
-
-      .shell {
-        margin: 0 auto;
-        max-width: 860px;
-        padding: 48px 20px 72px;
-      }
-
-      .hero {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 32px;
-        box-shadow: var(--shadow);
-        padding: 36px;
-      }
-
-      .kicker {
-        color: var(--accent);
-        font-size: 13px;
-        font-weight: 800;
-        letter-spacing: 0.12em;
-        margin: 0 0 14px;
-        text-transform: uppercase;
-      }
-
-      h1 {
-        font-size: clamp(2.4rem, 6vw, 4.4rem);
-        line-height: 0.98;
-        margin: 0;
-      }
-
-      .lede {
-        color: var(--muted);
-        font-size: 1.1rem;
-        line-height: 1.7;
-        margin: 20px 0 0;
-        max-width: 640px;
-      }
-
-      .grid {
-        display: grid;
-        gap: 18px;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        margin-top: 22px;
-      }
-
-      .card {
-        background: rgba(255, 255, 255, 0.78);
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        padding: 22px;
-      }
-
-      .card h2 {
-        font-size: 1.08rem;
-        margin: 0 0 10px;
-      }
-
-      .card p {
-        color: var(--muted);
-        line-height: 1.65;
-        margin: 0;
-      }
-
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 26px;
-      }
-
-      .button,
-      .link {
-        align-items: center;
-        border-radius: 999px;
-        display: inline-flex;
-        font-weight: 700;
-        justify-content: center;
-        min-height: 46px;
-        padding: 0 18px;
-        text-decoration: none;
-      }
-
-      .button {
-        background: var(--accent);
-        color: white;
-      }
-
-      .link {
-        background: white;
-        border: 1px solid var(--border);
-        color: var(--text);
-      }
-
-      .footer {
-        color: var(--muted);
-        font-size: 0.95rem;
-        margin-top: 22px;
-      }
-
-      @media (max-width: 640px) {
-        .hero {
-          padding: 26px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./site.js" defer></script>
   </head>
-  <body>
-    <main class="shell">
-      <section class="hero">
-        <p class="kicker">Sorane</p>
-        <h1>Keep music practice easy to return to.</h1>
-        <p class="lede">
-          Sorane helps musicians keep assignments organized, jump back in at the right BPM, and
-          make daily practice feel lighter and easier to pick back up.
-        </p>
-
-        <div class="grid">
-          <article class="card">
-            <h2>Import messy assignments</h2>
-            <p>Bring in screenshots or text, then turn them into a cleaner practice queue.</p>
-          </article>
-          <article class="card">
-            <h2>Return at the right tempo</h2>
-            <p>Track current BPM, launch the metronome, and keep good practice context close by.</p>
-          </article>
-          <article class="card">
-            <h2>See quiet progress</h2>
-            <p>Use the calendar and practice log to understand what you’ve actually worked on.</p>
-          </article>
+  <body class="home-page">
+    <header class="topbar">
+      <div class="site-shell">
+        <div class="nav-card">
+          <a class="brand" href="./index.html">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <span>Sorane</span>
+          </a>
+          <nav class="nav-links" aria-label="Primary">
+            <a class="nav-link" href="./index.html" aria-current="page">Home</a>
+            <a class="nav-link" href="./about.html">About</a>
+            <a class="nav-link" href="./privacy.html">Privacy Policy</a>
+            <a class="nav-link" href="./support.html">Support</a>
+          </nav>
         </div>
+      </div>
+    </header>
 
-        <div class="links">
-          <a class="button" href="./support.html">Support</a>
-          <a class="link" href="./privacy.html">Privacy Policy</a>
+    <main>
+      <section class="poster-hero">
+        <div class="poster-hero-inner">
+          <div class="poster-copy">
+            <p class="hero-brand">Quiet practice companion</p>
+            <h1 class="hero-name">Sorane</h1>
+            <p class="hero-tagline">Less friction. More playing.</p>
+            <p class="hero-copy">
+              A local-first iPhone app that keeps assignments, tempo context, tracks, and progress
+              in one calm place.
+            </p>
+            <p class="hero-links">
+              <a href="./about.html">Read the story</a>
+              <a href="./support.html">Get support</a>
+            </p>
+          </div>
+
+          <div class="poster-visual" aria-hidden="true">
+            <div class="poster-glow"></div>
+            <figure class="poster-shot">
+              <img src="./Assets/home_header_1.jpg" alt="" />
+            </figure>
+          </div>
         </div>
-
-        <p class="footer">Built by Jessie Li.</p>
       </section>
+
+      <div class="site-shell page">
+        <section class="story-intro" data-reveal>
+          <p class="section-kicker">How Sorane works</p>
+          <h2>Six quiet pieces of the practice loop.</h2>
+          <p>
+            Sorane keeps the essentials together: what to practice, what tempo you were at, what
+            to play against, and what has already been worked on.
+          </p>
+        </section>
+
+        <div class="feature-track">
+          <section class="feature-block" data-reveal>
+            <div class="feature-copy">
+              <p class="feature-number">01</p>
+              <h3 class="feature-title">Start from the home screen.</h3>
+              <p class="feature-text">
+                Your active queue, streak, and monthly practice calendar live together, so it is
+                easy to see what is next and how recently you played.
+              </p>
+            </div>
+            <div class="feature-visual">
+              <figure class="screenshot">
+                <img
+                  src="./Assets/home_header_1.jpg"
+                  alt="Sorane home screen showing the practice queue, streak, and practice calendar."
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="feature-block reverse" data-reveal>
+            <div class="feature-copy">
+              <p class="feature-number">02</p>
+              <h3 class="feature-title">Import assignments without extra cleanup.</h3>
+              <p class="feature-text">
+                Bring in a screenshot or typed text, review the recognized text, then edit or
+                remove parsed practice lines before saving a cleaner queue.
+              </p>
+            </div>
+            <div class="feature-visual">
+              <div class="screenshot-pair">
+                <figure class="screenshot">
+                  <img
+                    src="./Assets/backup_import_assignment.jpg"
+                    alt="Sorane import screen with typed assignment text ready to save."
+                    loading="lazy"
+                  />
+                </figure>
+                <figure class="screenshot">
+                  <img
+                    src="./Assets/import_assignment_2.jpg"
+                    alt="Sorane import screen showing OCR text review and parsed practice items."
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+            </div>
+          </section>
+
+          <section class="feature-block" data-reveal>
+            <div class="feature-copy">
+              <p class="feature-number">03</p>
+              <h3 class="feature-title">Return at the right tempo.</h3>
+              <p class="feature-text">
+                Each practice item remembers its current BPM and includes a built-in metronome with
+                subdivision choices, so getting back into a piece takes less setup.
+              </p>
+            </div>
+            <div class="feature-visual">
+              <figure class="screenshot">
+                <img
+                  src="./Assets/metronome_3.jpg"
+                  alt="Sorane practice item screen with BPM controls and built-in metronome."
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="feature-block reverse" data-reveal>
+            <div class="feature-copy">
+              <p class="feature-number">04</p>
+              <h3 class="feature-title">Keep tracks attached to the work.</h3>
+              <p class="feature-text">
+                Sorane can surface suggested tracks for the current BPM, and you can save your own
+                backing track, lesson, or song links right on the item.
+              </p>
+            </div>
+            <div class="feature-visual">
+              <figure class="screenshot">
+                <img
+                  src="./Assets/suggested_songs_4.jpg"
+                  alt="Sorane practice item screen showing suggested songs and saved practice links."
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="feature-block" data-reveal>
+            <div class="feature-copy">
+              <p class="feature-number">05</p>
+              <h3 class="feature-title">See progress without making it loud.</h3>
+              <p class="feature-text">
+                A monthly calendar, current streak, best streak, and total practice days give you a
+                gentle pulse check on what you have already shown up for.
+              </p>
+            </div>
+            <div class="feature-visual">
+              <figure class="screenshot">
+                <img
+                  src="./Assets/track_progress_5.jpg"
+                  alt="Sorane progress screen showing streaks, practice totals, and the calendar log."
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </section>
+
+          <section class="feature-block reverse" data-reveal>
+            <div class="feature-copy">
+              <p class="feature-number">06</p>
+              <h3 class="feature-title">Keep a copy-ready practice log.</h3>
+              <p class="feature-text">
+                Every practice day is saved with the date and BPM. When you want outside feedback,
+                you can copy the log with the prompt already included and paste it into AI tools.
+              </p>
+            </div>
+            <div class="feature-visual">
+              <figure class="screenshot">
+                <img
+                  src="./Assets/practice_log_6.jpg"
+                  alt="Sorane practice log screen showing dated entries and a copy practice log action."
+                  loading="lazy"
+                />
+              </figure>
+            </div>
+          </section>
+        </div>
+
+        <section class="closing-note" data-reveal>
+          <p class="section-kicker">A final note</p>
+          <p>
+            Sorane shortens the distance between "I should practice" and "I&apos;m already
+            playing". Questions or feedback:
+            <a href="mailto:hello@getsorane.com">hello@getsorane.com</a>.
+          </p>
+        </section>
+      </div>
     </main>
+
+    <footer class="site-shell footer">
+      <p>Sorane is a quiet practice companion for musicians.</p>
+      <div class="footer-links">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./privacy.html">Privacy Policy</a>
+        <a href="./support.html">Support</a>
+      </div>
+    </footer>
   </body>
 </html>
