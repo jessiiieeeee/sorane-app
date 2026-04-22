@@ -353,12 +353,15 @@ figure {
 
 .feature-track {
   border-top: 1px solid var(--line);
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .feature-block {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
-  gap: 48px;
+  grid-template-columns: minmax(0, 420px) minmax(0, 396px);
+  justify-content: center;
+  gap: 56px;
   align-items: center;
   padding: 72px 0;
   border-bottom: 1px solid var(--line);
@@ -373,7 +376,7 @@ figure {
 }
 
 .feature-copy {
-  max-width: 33rem;
+  max-width: none;
 }
 
 .feature-title,
@@ -391,12 +394,12 @@ figure {
 
 .feature-visual {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .feature-block.reverse .feature-visual {
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .screenshot {
