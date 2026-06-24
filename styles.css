@@ -279,8 +279,6 @@ figure {
 }
 
 .hero-qr-label {
-  padding-bottom: 6px;
-  border-bottom: 1px solid rgba(47, 127, 123, 0.26);
   color: var(--text);
   font-size: 0.98rem;
   font-weight: 600;
