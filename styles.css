@@ -246,6 +246,7 @@ figure {
 .hero-links {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 22px;
   margin: 28px 0 0;
 }
@@ -268,6 +269,39 @@ figure {
   border-color: var(--accent);
   color: var(--accent);
   outline: none;
+}
+
+.hero-qr-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.hero-qr-label {
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(47, 127, 123, 0.26);
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: normal;
+}
+
+.hero-qr-tile {
+  display: inline-flex;
+  padding: 9px;
+  border: 1px solid rgba(47, 127, 123, 0.14);
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0 10px 24px rgba(47, 127, 123, 0.08);
+}
+
+.hero-qr-tile img {
+  width: 78px;
+  height: 78px;
+  max-width: none;
+  border-radius: 9px;
 }
 
 .store-cta {
