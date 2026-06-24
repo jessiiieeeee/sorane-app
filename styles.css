@@ -298,6 +298,45 @@ figure {
   transform: translateY(-1px);
 }
 
+.hero-download {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.hero-store-cta {
+  min-height: 50px;
+  padding: 0 22px;
+  font-size: 0.96rem;
+  box-shadow: 0 14px 28px rgba(47, 127, 123, 0.18);
+}
+
+.hero-qr {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px 10px 10px;
+  border: 1px solid rgba(47, 127, 123, 0.14);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.hero-qr img {
+  width: 84px;
+  height: 84px;
+  border-radius: 12px;
+}
+
+.hero-qr span {
+  max-width: 8ch;
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .poster-visual {
   position: relative;
   display: flex;
@@ -380,7 +419,6 @@ figure {
   line-height: 1.88;
 }
 
-.download-panel,
 .download-page {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 260px;
@@ -706,6 +744,10 @@ figure {
     animation: hero-fade 760ms var(--ease-out) 380ms both;
   }
 
+  .home-page .hero-download {
+    animation: hero-fade 760ms var(--ease-out) 460ms both;
+  }
+
   .home-page .poster-shot {
     animation:
       hero-rise 1000ms var(--ease-out) 180ms both,
@@ -730,7 +772,6 @@ figure {
 @media (max-width: 1080px) {
   .poster-hero-inner,
   .feature-block,
-  .download-panel,
   .download-page {
     grid-template-columns: 1fr;
     gap: 36px;
@@ -813,7 +854,6 @@ figure {
     padding: 30px 0;
   }
 
-  .download-panel,
   .download-page {
     padding: 26px;
     border-radius: 32px;
@@ -827,6 +867,19 @@ figure {
 @media (max-width: 560px) {
   .hero-links {
     gap: 18px;
+  }
+
+  .hero-download {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .hero-store-cta {
+    width: 100%;
+  }
+
+  .hero-qr {
+    width: 100%;
   }
 
   .screenshot {
